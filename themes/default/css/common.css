@@ -80,11 +80,53 @@ a img {
 .menu ul {
     line-height: 2;
     text-align: left;
-    width: 50%;    
+    width: 50%;
     margin: 0 auto;
 }
 
 .main {
     margin-left: 300px;
-    padding: 60px;
+    /*padding: 60px;*/
+}
+
+.section {
+padding: 60px;
+}
+
+.about h3 {
+    font-weight: bold;
+}
+
+.about .article {
+    padding: 40px;
+}
+
+.experience {
+    background: #fafafa;
+}
+
+.blockquote {
+    margin: 30px 0;
+    padding:20px;
+}
+
+.blockquote-red{
+   border-left: 3px solid #f00;
+}
+
+.blockquote-gray{
+   border-left: 3px solid #ccc;
+}
+
+.job .title {
+    font-weight: bold;
+    font-size: 20px
+}
+
+.circle {
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    border: 1px solid #000;    
+    background:#fff
 }
