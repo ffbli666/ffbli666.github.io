@@ -93,15 +93,11 @@ a img {
 padding: 60px;
 }
 
-.about h3 {
-    font-weight: bold;
-}
-
 .about .article {
     padding: 40px;
 }
 
-.experience {
+.experience, .works {
     background: #fafafa;
 }
 
@@ -118,10 +114,14 @@ padding: 60px;
    border-left: 3px solid #ccc;
 }
 
-.job .title {
-    font-weight: bold;
+.job .title {    
     font-size: 20px
 }
+
+.student .school {    
+    font-size: 20px
+}
+
 
 .circle {
     width:20px;
