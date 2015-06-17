@@ -18,7 +18,16 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 a img {
@@ -64,11 +73,11 @@ a img {
     margin: 0 8px 0 0;
 }
 
-.contact a {
+.sidebar a {
     color: #ccc;
 }
 
-.contact a:hover {
+.sidebar a:hover {
     color: #fff;
 }
 

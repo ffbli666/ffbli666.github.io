@@ -66,15 +66,15 @@
                     </div>
                     <div class="menu">
                         <ul>
-                            <li>About</li>
-                            <li>Experience</li>
-                            <li>Education</li>
-                            <li>Works</li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#works">Works</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="main">
-                    <div class="about section">
+                    <div id="about" class="about section">
                         <h1>About</h1>
                         <h3><strong>一生懸命></strong></h3>
                         <div class="article">
@@ -106,7 +106,7 @@
                             畢業於台北科技大學資訊工程所碩士
                         </p> -->
                     </div>
-                    <div class="experience section">
+                    <div id="experience" class="experience section">
                         <h1>Experience</h1>                        
                         <div class="job blockquote blockquote-red">
                             <div class="title"><strong>技術經理</strong></div>
@@ -124,7 +124,7 @@
                             <div class="during">2003/07 ~ 2006/05</div>
                         </div>
                     </div>
-                    <div class="education section">
+                    <div id="education" class="education section">
                         <h1>Education</h1>
                         <div class="student blockquote blockquote-gray">
                             <div class="school"><strong>台北科技大學</strong></div>
@@ -137,7 +137,7 @@
                             <div class="during">2006 ~ 2009</div>
                         </div>
                     </div>
-                    <div class="works section">
+                    <div id="works" class="works section">
                         <h1>Works</h1>
                     </div>
                 </div>
@@ -147,10 +147,12 @@
         <script src="/js/jquery-1.11.3.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>
     </body>
 </html>
 <script>
 $( document ).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.sidebar a').smoothScroll();
 });
 </script>
