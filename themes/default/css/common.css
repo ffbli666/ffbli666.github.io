@@ -103,7 +103,7 @@ padding: 60px;
 }
 
 .about .article {
-    padding: 40px;
+    /*padding: 40px;*/
 }
 
 .experience, .works {
@@ -112,7 +112,7 @@ padding: 60px;
 
 .blockquote {
     margin: 30px 0;
-    padding:20px;
+    padding:20px 40px;
 }
 
 .blockquote-red{
@@ -138,4 +138,18 @@ padding: 60px;
     border-radius:10px;
     border: 1px solid #000;    
     background:#fff
+}
+
+.thumbnail {
+    height: 696px;
+    overflow: hidden;
+}
+
+.thumbnail .link {
+    padding: 9px;
+}
+
+.thumbnail .caption {
+    height: calc(100% - 348px - 40px);
+    overflow: hidden;
 }
