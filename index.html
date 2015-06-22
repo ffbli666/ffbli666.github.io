@@ -66,10 +66,10 @@
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#works">Works</a></li>
+                            <li><a class="smoothA" href="#about">About</a></li>
+                            <li><a class="smoothA" href="#experience">Experience</a></li>
+                            <li><a class="smoothA" href="#education">Education</a></li>
+                            <li><a class="smoothA" href="#works">Works</a></li>
                         </ul>
                     </div>
                 </div>
@@ -418,6 +418,11 @@
                 </div>
             </div>
         </div>
+        <div class="float-nav" style="display:none">
+            <a class="smoothA" href="#about">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="/js/jquery-1.11.3.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -426,9 +431,19 @@
     </body>
 </html>
 <script>
-$( document ).ready(function() {
+$( document ).ready( function() {
     $('[data-toggle="tooltip"]').tooltip();
-    $('.sidebar a').smoothScroll();
+    $('.smoothA').smoothScroll();
+
+    $( document ).scroll( function() {
+        var y = $(this).scrollTop();
+        if (y > 50) {
+            $('.float-nav').fadeIn();
+        } 
+        else {
+            $('.float-nav').fadeOut();
+        }
+    });
 });
 </script>
 <!--
