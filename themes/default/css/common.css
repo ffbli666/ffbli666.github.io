@@ -140,8 +140,7 @@ padding: 60px;
     background:#fff
 }
 
-.thumbnail {
-    height: 696px;
+.thumbnail {    
     overflow: hidden;
 }
 
@@ -150,6 +149,6 @@ padding: 60px;
 }
 
 .thumbnail .caption {
-    height: calc(100% - 348px - 40px);
+    height: 300px;
     overflow: hidden;
 }
