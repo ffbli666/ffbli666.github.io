@@ -37,6 +37,7 @@ a img {
 .wrapper {
 }
 
+
 .sidebar {
     text-align: center;
     position: fixed;
@@ -45,7 +46,31 @@ a img {
     width: 300px;
     height: 100%;
     font-size: 24px;
-    padding: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    opacity: 0;
+    left: -300px;    
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-reveal {
+        visibility: visible;
+        opacity: 1;
+        left: 0px;
+    }
+    .sidebar-reveal ~ .main {
+        transform: translateX(300px);
+        width: calc(100% - 300px);
+    }
+}
+.sidebar a {
+    color: #ccc;
+}
+
+.sidebar a:hover {
+    color: #fff;
 }
 
 .sidebar ul {
@@ -64,7 +89,7 @@ a img {
 }
 
 .contact {
-    overflow: auto;
+    overflow: none;
     margin: 30px 0 30px;
 }
 
@@ -73,13 +98,6 @@ a img {
     margin: 0 8px 0 0;
 }
 
-.sidebar a {
-    color: #ccc;
-}
-
-.sidebar a:hover {
-    color: #fff;
-}
 
 .menu {
     border-top: 1px solid #666;
@@ -94,8 +112,11 @@ a img {
 }
 
 .main {
-    margin-left: 300px;
-    /*padding: 60px;*/
+    position: relative;
+    z-index: 50;
+    transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -moz-transition: all 500ms ease 0s;
 }
 
 .section {
@@ -146,6 +167,8 @@ padding: 60px;
 
 .thumbnail .link {
     padding: 9px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .thumbnail .caption {
@@ -158,6 +181,7 @@ padding: 60px;
     bottom: 20px;
     right:20px;
     font-size: 30px;
+    z-index: 100;
 }
 
 .float-nav a {

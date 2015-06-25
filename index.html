@@ -21,7 +21,7 @@
     <body>
         <div class="container-fluid wrapper">
             <div class="row">
-                <div class="sidebar profile">
+                <div class="sidebar sidebar-reveal">
                     <div class="thumb">
                         <img src="images/profileThumb.jpg" alt="大頭照" class="img-circle">
                     </div>
@@ -144,7 +144,7 @@
                         <h3><strong>多普達國際股份有限公司</strong></h3>
                         <h3><strong>台灣數位學習股份有限公司</strong></h3>
                         <div class="row">
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-pms.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -218,7 +218,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-powercamcc.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -265,7 +265,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-lms.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -308,7 +308,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-tms.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -339,7 +339,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-blog.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -373,7 +373,7 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-powercam.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -399,7 +399,7 @@
                         </div>
                         <h3><strong>台北科技大學研究所</strong></h3>
                         <div class="row">
-                            <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/d2mce.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
                                     <div class="caption">
@@ -424,10 +424,10 @@
             </a>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script type='text/javascript' src="js/jquery-1.11.3.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/js/bootstrap.min.js"></script>
-        <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>        
     </body>
 </html>
 <script>
@@ -443,8 +443,19 @@ $( document ).ready( function() {
         else {
             $('.float-nav').fadeOut();
         }
-    });
+    });    
 });
+
+function sidebarShow() {
+    var nav = $('.sidebar');
+    if (!nav.hasClass("sidebar-reveal")) {
+        nav.addClass("sidebar-reveal");
+    } 
+    else {
+        nav.removeClass("sidebar-reveal");
+    }
+}
+
 </script>
 <!--
 
