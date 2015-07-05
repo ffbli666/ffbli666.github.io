@@ -34,36 +34,35 @@ a img {
     border:0px;
 }
 
-.wrapper {
+.show {
+    display: inline-block;
 }
 
-
+.wrapper {
+}
 
 .sidebar {
     text-align: center;
     position: fixed;
     background: #163549;
     color: #fff;
-    width: 300px;
+    width: 60px;
     height: 100%;
     font-size: 24px;
-    overflow: hidden;
     white-space: nowrap;
     transition: all 500ms ease 0s;
-    visibility: hidden;
-    opacity: 0;
-    left: -300px;    
 }
 
 .sidebar-reveal {
-    visibility: visible;
-    opacity: 1;
-    left: 0px;
+    width: 300px;
 }
 
-.sidebar-reveal ~ .main {
-    transform: translateX(300px);
-    width: calc(100% - 300px);
+.sidebar a {
+    color: #ccc;
+}
+
+.sidebar a:hover {
+    color: #aaa;
 }
 
 .sidebar a {
@@ -80,18 +79,43 @@ a img {
     margin: 0;
 }
 
+.thumb {
+    display: none;    
+    transition: all 500ms ease 0s;
+}
+
+.sidebar-reveal .thumb{    
+    display: block;
+}
+
+
 .thumb img {
     margin: 30px 0 0;
     width: 180px;
-    height: 180px;
+    height: 180px;    
 }
 
 .name {
+    display: none;
+}
+
+.sidebar-reveal .name {
+    display: block;
 }
 
 .contact {
+    top: 200px;
+    left: 72px;
+    position: fixed;
     overflow: none;
+    display: none;
+}
+
+
+.sidebar-reveal .contact {    
     margin: 30px 0 30px;
+    position: static ;
+    display: block;
 }
 
 .contact li {
@@ -100,8 +124,7 @@ a img {
 }
 
 
-.menu {
-    border-top: 1px solid #666;
+.menu {    
     padding: 30px 0;
 }
 
@@ -112,7 +135,30 @@ a img {
     margin: 0 auto;
 }
 
+.menu a i {
+    text-align: center;
+    width: 30px;
+}
+
+.sidebar-reveal .menu {
+    border-top: 1px solid #666;
+}
+
+.menu a span {
+    display: none;
+}
+
+.sidebar-reveal .menu a span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sidebar-reveal .menu li:last-child {
+    display: none;
+}
+
 .main {
+    margin-left: 60px;
     position: relative;
     z-index: 50;
     transition: all 500ms ease 0s;
@@ -120,9 +166,22 @@ a img {
     -moz-transition: all 500ms ease 0s;
 }
 
-.section {
-padding: 60px;
+.sidebar-reveal ~ .main {
+    margin-left: 0px;
+    transform: translateX(300px);
+    width: calc(100% - 300px);
 }
+
+.section {
+    padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        padding: 60px;
+    }
+}
+
 
 .about .article {
     /*padding: 40px;*/
@@ -196,14 +255,4 @@ padding: 60px;
 .square-nav a:hover {
     color: #aaa;    
 }
-
-.mobile-nav {    
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 30px;
-}
-
-
-/*@media only screen and (min-width: 768px) {*/
 

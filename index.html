@@ -66,22 +66,15 @@
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><a class="smoothA" href="#about">About</a></li>
-                            <li><a class="smoothA" href="#experience">Experience</a></li>
-                            <li><a class="smoothA" href="#education">Education</a></li>
-                            <li><a class="smoothA" href="#works">Works</a></li>
+                            <li><a class="smoothA" href="#about"><i class="fa fa-user" title="About" data-toggle="tooltip" data-placement="bottom" ></i><span>About</span></a></li>
+                            <li><a class="smoothA" href="#experience"><i class="fa fa-server"  title="Experience" data-toggle="tooltip" data-placement="bottom" ></i><span>Experience</span></a></li>
+                            <li><a class="smoothA" href="#education"><i class="fa fa-graduation-cap"  title="Education" data-toggle="tooltip" data-placement="bottom" ></i><span>Education</span></a></li>
+                            <li><a class="smoothA" href="#works"><i class="fa fa-folder-open"  title="Work" data-toggle="tooltip" data-placement="bottom" ></i><span>Works</span></a></li>
+                            <li><a class="smoothA" onclick="contactObj.turn()"><i class="fa fa-globe"  title="Social" data-toggle="tooltip" data-placement="bottom" ></i><span>Social</span></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="main">
-                    <div class="mobile-nav square-nav">
-                        <a onclick="sidebarObj.turn()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <a class="smoothA" href="#about">
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                    </div>
                     <div id="about" class="about section">
                         <h1>About</h1>
                         <h3><strong>一生懸命</strong></h3>
@@ -468,8 +461,36 @@ var sidebar = function () {
     }
 }
 
-var sidebarObj = new sidebar();
+var contact = function() {
+    var contact = $('.contact');
+    var hidden = function () {
+        nav.removeClass("show");
+    }
 
+    var show = function () {
+        if (!nav.hasClass("show")) {
+            nav.addClass("show");
+        }
+    }
+
+    var turn = function (){
+        if (!nav.hasClass("show")) {
+            show();
+        }
+        else {
+            hidden();
+        }
+    }
+
+    return {
+        hidden: hidden,
+        show: show,
+        turn: turn
+    }
+}
+
+var sidebarObj = new sidebar();
+var contactObj = new contact();
 $(document).ready( function() {
     $('[data-toggle="tooltip"]').tooltip();
     $('.smoothA').smoothScroll();
