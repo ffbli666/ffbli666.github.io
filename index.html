@@ -70,7 +70,7 @@
                             <li><a class="smoothA" href="#experience"><i class="fa fa-server"  title="Experience" data-toggle="tooltip" data-placement="bottom" ></i><span>Experience</span></a></li>
                             <li><a class="smoothA" href="#education"><i class="fa fa-graduation-cap"  title="Education" data-toggle="tooltip" data-placement="bottom" ></i><span>Education</span></a></li>
                             <li><a class="smoothA" href="#works"><i class="fa fa-folder-open"  title="Work" data-toggle="tooltip" data-placement="bottom" ></i><span>Works</span></a></li>
-                            <li><a class="smoothA" onclick="contactObj.turn()"><i class="fa fa-globe"  title="Social" data-toggle="tooltip" data-placement="bottom" ></i><span>Social</span></a></li>
+                            <li><a class="smoothA" onclick="contactObj.fadeToggle()"><i class="fa fa-globe"  title="Social" data-toggle="tooltip" data-placement="bottom" ></i><span>Social</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -433,48 +433,20 @@
 </html>
 <script>
 var sidebar = function () {
-    var nav = $('.sidebar');
+    var obj = $('.sidebar');
 
     var hidden = function () {
-        nav.removeClass("sidebar-reveal");
+        obj.removeClass("sidebar-reveal");
     }
 
     var show = function () {
-        if (!nav.hasClass("sidebar-reveal")) {
-            nav.addClass("sidebar-reveal");
+        if (!obj.hasClass("sidebar-reveal")) {
+            obj.addClass("sidebar-reveal");
         }
     }
 
     var turn = function (){
-        if (!nav.hasClass("sidebar-reveal")) {
-            show();
-        }
-        else {
-            hidden();
-        }
-    }
-
-    return {
-        hidden: hidden,
-        show: show,
-        turn: turn
-    }
-}
-
-var contact = function() {
-    var contact = $('.contact');
-    var hidden = function () {
-        nav.removeClass("show");
-    }
-
-    var show = function () {
-        if (!nav.hasClass("show")) {
-            nav.addClass("show");
-        }
-    }
-
-    var turn = function (){
-        if (!nav.hasClass("show")) {
+        if (!obj.hasClass("sidebar-reveal")) {
             show();
         }
         else {
@@ -490,18 +462,20 @@ var contact = function() {
 }
 
 var sidebarObj = new sidebar();
-var contactObj = new contact();
+var contactObj = $('.contact');
+
 $(document).ready( function() {
     $('[data-toggle="tooltip"]').tooltip();
     $('.smoothA').smoothScroll();
 
     $(document).scroll( function() {
         var y = $(this).scrollTop();
+        var floatNav = $('.float-nav');
         if (y > 50) {
-            $('.float-nav').fadeIn();
+            floatNav.fadeIn();
         } 
         else {
-            $('.float-nav').fadeOut();
+            floatNav.fadeOut();
         }
     });
     
