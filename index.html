@@ -475,10 +475,10 @@ $(document).ready( function() {
     $('[data-toggle="tooltip"]').tooltip();
     $('.smoothA').smoothScroll();
 
-    // $('.grid').masonry({
-    //     itemSelector: '.grid-item',
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
 
-    // });
+    });
 
     $(document).scroll( function() {
         var y = $(this).scrollTop();
