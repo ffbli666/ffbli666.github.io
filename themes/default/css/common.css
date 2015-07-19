@@ -77,11 +77,11 @@ a img {
 }
 
 .thumb {
-    display: none;    
+    display: none;
     transition: all 500ms ease 0s;
 }
 
-.sidebar-reveal .thumb{    
+.sidebar-reveal .thumb{
     display: block;
 }
 
@@ -89,7 +89,7 @@ a img {
 .thumb img {
     margin: 30px 0 0;
     width: 180px;
-    height: 180px;    
+    height: 180px;
 }
 
 .name {
@@ -106,7 +106,7 @@ a img {
     position: fixed;
     overflow: none;
     display: none;
-    z-index: 100;    
+    z-index: 100;
 }
 
 .sidebar-reveal .contact {
@@ -123,7 +123,7 @@ a img {
     display: inline-block;
 }
 
-.sidebar-reveal .contact li {    
+.sidebar-reveal .contact li {
     margin: 0 8px 0 0;
     padding: 0;
     border: 0;
@@ -138,7 +138,7 @@ a img {
     color: #fff;
 }
 
-.menu {    
+.menu {
     padding: 30px 0;
 }
 
@@ -158,6 +158,10 @@ a img {
     border-top: 1px solid #666;
 }
 
+.sidebar-reveal .menu a i{
+    display: none;
+}
+
 .menu a span {
     display: none;
 }
@@ -173,7 +177,7 @@ a img {
 
 .main {
     margin-left: 60px;
-    position: relative;    
+    position: relative;
     transition: all 500ms ease 0s;
     -webkit-transition: all 500ms ease 0s;
     -moz-transition: all 500ms ease 0s;
@@ -217,11 +221,11 @@ a img {
    border-left: 3px solid #ccc;
 }
 
-.job .title {    
+.job .title {
     font-size: 20px
 }
 
-.student .school {    
+.student .school {
     font-size: 20px
 }
 
@@ -230,12 +234,13 @@ a img {
     width:20px;
     height:20px;
     border-radius:10px;
-    border: 1px solid #000;    
+    border: 1px solid #000;
     background:#fff
 }
 
-.thumbnail {    
+.thumbnail {
     overflow: hidden;
+    padding: 0px;
 }
 
 .thumbnail .link {
@@ -245,7 +250,6 @@ a img {
 }
 
 .thumbnail .caption {
-    height: 300px;
     overflow: hidden;
 }
 
@@ -266,6 +270,6 @@ a img {
 }
 
 .square-nav a:hover {
-    color: #aaa;    
+    color: #aaa;
 }
 

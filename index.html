@@ -56,7 +56,7 @@
                                     <i class="fa fa-google-plus-square"></i>
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="http://rpg1982.blogspot.tw/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Blog">
                                     <i class="fa fa-bold"></i>
@@ -109,7 +109,7 @@
                         </p> -->
                     </div>
                     <div id="experience" class="experience section">
-                        <h1>Experience</h1>                        
+                        <h1>Experience</h1>
                         <div class="job blockquote blockquote-red">
                             <div class="title"><strong>技術經理</strong></div>
                             <div class="company">多普達國際股份有限公司</div>
@@ -144,7 +144,7 @@
                         <h3><strong>自己創作</strong></h3>
                         <h3><strong>多普達國際股份有限公司</strong></h3>
                         <h3><strong>台灣數位學習股份有限公司</strong></h3>
-                        <div class="row">
+                        <div class="row waterfall" data-col-min-width="350" data-autoresize="true">
                             <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-pms.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
@@ -157,7 +157,7 @@
                                             是個適合學校、企業或個人安裝的 MOOCS，支援 Powercam 及一般常見格式的影片上傳並轉檔成 MP4 來適應各個不同的閱讀平台也支援相簿、PDF、MP3、文件等多種不同格式的多媒體上傳、另外也有線上直播等功能。
                                         </p>
                                         <p>
-                                            角色：主要開發負責人及維護 
+                                            角色：主要開發負責人及維護
                                         </p>
                                         <p>
                                             負責項目：
@@ -190,7 +190,7 @@
                                                     PMS windows 安裝包 (整合 apache+php+mysql)
                                                 </li>
                                                 <li>
-                                                    資料可以分享至 powercam.cc 
+                                                    資料可以分享至 powercam.cc
                                                 </li>
                                                 <li>
                                                     PMS 自有訂閱(類似 RSS)
@@ -231,7 +231,7 @@
                                             MOOCS 概念的雲端分享平台，主要功能為提供講師可以製作自己數位學習教材分享(或販賣)給大家觀看的平台，並以 PowerCam 錄影(或影片)教材上傳並將其轉成 MP4 影片檔，給使用者直接於 Web 觀看，並支援 iPhone、iPad 及 Android 等行動裝置觀看。
                                         </p>
                                         <p>
-                                            角色：開發成員及維護 
+                                            角色：開發成員及維護
                                         </p>
                                         <p>
                                             負責項目：
@@ -355,7 +355,7 @@
                                             負責項目：
                                             <ul>
                                                 <li>
-                                                    由純 ajax 網站重寫改為傳統架構(當時 google seo ajax 網站還未抓取資料) 
+                                                    由純 ajax 網站重寫改為傳統架構(當時 google seo ajax 網站還未抓取資料)
                                                 </li>
                                                 <li>
                                                     投票&活動功能
@@ -373,7 +373,7 @@
                                         <a href="http://blog.ncue.edu.tw/" target="_blank">國立彰化師範大學</a>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/fm-powercam.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
@@ -399,7 +399,7 @@
                             </div>
                         </div>
                         <h3><strong>台北科技大學研究所</strong></h3>
-                        <div class="row">
+                        <div class="row waterfall" data-col-min-width="350" data-autoresize="true">
                             <div class="col-sm-6 col-md-6 col-lg-3">
                                 <div class="thumbnail">
                                     <img src="images/d2mce.png" alt="D2MCE, Dynamic Distributed Mobile Computing Environment">
@@ -429,24 +429,32 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script type='text/javascript' src="js/bootstrap.min.js"></script>
         <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>
+        <script type='text/javascript' src="js/zepto.js"></script>
+        <script type='text/javascript' src="js/jquery.waterfall.js"></script>
     </body>
 </html>
 <script>
 var sidebar = function () {
     var obj = $('.sidebar');
-
+    var hide = false;
     var hidden = function () {
-        obj.removeClass("sidebar-reveal");
+        if (!hide){
+            obj.removeClass("sidebar-reveal");
+            hide = true;
+        }
     }
 
     var show = function () {
-        if (!obj.hasClass("sidebar-reveal")) {
-            obj.addClass("sidebar-reveal");
+        if (hide) {
+            if (!obj.hasClass("sidebar-reveal")) {
+                obj.addClass("sidebar-reveal");
+                hide = false;
+            }
         }
     }
 
     var turn = function (){
-        if (!obj.hasClass("sidebar-reveal")) {
+        if (hide) {
             show();
         }
         else {
@@ -473,17 +481,27 @@ $(document).ready( function() {
         var floatNav = $('.float-nav');
         if (y > 50) {
             floatNav.fadeIn();
-        } 
+        }
         else {
             floatNav.fadeOut();
         }
     });
-    
+
+
+    sidebarHide();
+    $(window).resize(function() {
+        sidebarHide();
+    });
+});
+
+function sidebarHide(){
     if ($(window).width() < 768) {
         sidebarObj.hidden();
     }
-});
-
+    else {
+        sidebarObj.show();
+    }
+}
 
 </script>
 <!--
