@@ -62,14 +62,6 @@ a img {
     color: #aaa;
 }
 
-.sidebar a {
-    color: #ccc;
-}
-
-.sidebar a:hover {
-    color: #fff;
-}
-
 .sidebar ul {
     list-style-type: none;
     padding: 0;
