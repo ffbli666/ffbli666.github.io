@@ -570,6 +570,7 @@
         <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>
         <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
         <script type='text/javascript' src='js/modernizr-2.6.2.js'></script>
+        <script type='text/javascript' src='js/imagesloaded.pkgd.min.js'></script>
     </body>
 </html>
 <script>
@@ -635,20 +636,22 @@ $(document).ready( function() {
         }
     });
 
-    if ($(window).width() < 768) {
-        sidebarObj.hidden(function(){
+    imagesLoaded(document.querySelector('.thumbnail img'), function( instance ) {
+        if ($(window).width() < 768) {
+            sidebarObj.hidden(function(){
+                $('.grid').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-item'
+                });
+            });
+        }
+        else {
             $('.grid').masonry({
                 itemSelector: '.grid-item',
                 columnWidth: '.grid-item'
             });
-        });
-    }
-    else {
-        $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-item'
-        });
-    }
+        }
+    });
 
     $(window).resize(function() {
         sidebarHide();
