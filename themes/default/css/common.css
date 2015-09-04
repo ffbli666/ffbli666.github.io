@@ -196,7 +196,7 @@ a img {
     /*padding: 40px;*/
 }
 
-.about, .experience, .works {
+.main > div:nth-child(even) {
     background: #fafafa;
 }
 
