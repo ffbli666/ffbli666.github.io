@@ -7,8 +7,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: "segoe ui", Helvetica, Arial, "WenQuanYi Zen Hei", "Apple LiGothic Medium", "Microsoft JhengHei", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
+
 
 form {
     display: inline;
@@ -93,7 +94,7 @@ a img {
 }
 
 .contact {
-    top: 229px;
+    top: 274px;
     left: 72px;
     position: fixed;
     overflow: none;
@@ -182,15 +183,8 @@ a img {
 }
 
 .section {
-    padding: 30px;
+    padding: 20px;
 }
-
-@media only screen and (min-width: 768px) {
-    .section {
-        padding: 60px;
-    }
-}
-
 
 .about .article {
     /*padding: 40px;*/
@@ -201,8 +195,8 @@ a img {
 }
 
 .blockquote {
-    margin: 30px 0;
-    padding:20px 40px;
+    margin : 20px 0;
+    padding: 10px 40px;
 }
 
 .blockquote-red{
@@ -214,11 +208,11 @@ a img {
 }
 
 .job .title {
-    font-size: 20px
+    font-size: 16px
 }
 
 .student .school {
-    font-size: 20px
+    font-size: 16px
 }
 
 
@@ -264,3 +258,19 @@ a img {
     color: #aaa;
 }
 
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .section {
+        padding: 60px;
+    }
+
+    .job .title {
+        font-size: 20px
+    }
+
+    .student .school {
+        font-size: 20px
+    }
+}
