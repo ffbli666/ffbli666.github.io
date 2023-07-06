@@ -43,7 +43,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://www.slideshare.net/ZongYingLyu" target="_blank" data-toggle="tooltip"data-placement="bottom" title="SlideShare">
+                                <a href="https://www.slideshare.net/ZongYingLyu" target="_blank" data-toggle="tooltip"data-placement="bottom" title="SlideShare">
                                     <i class="fa fa-slideshare"></i>
                                 </a>
                             </li>
@@ -53,13 +53,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://plus.google.com/+ZongYingLyu/posts" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Google Plus">
-                                    <i class="fa fa-google-plus-square"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="http://rpg1982.blogspot.tw/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Blog">
+                                <a href="https://rpg1982.blogspot.tw/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Blog">
                                     <i class="fa fa-bold"></i>
                                 </a>
                             </li>
@@ -71,7 +65,7 @@
                             <li><a class="smoothA" href="#summary"><i class="fa fa-list"  title="Summary" data-toggle="tooltip" data-placement="bottom" ></i><span>Summary</span></a></li>
                             <li><a class="smoothA" href="#experience"><i class="fa fa-file-text"  title="Experience" data-toggle="tooltip" data-placement="bottom" ></i><span>Experience</span></a></li>
                             <li><a class="smoothA" href="#education"><i class="fa fa-graduation-cap"  title="Education" data-toggle="tooltip" data-placement="bottom" ></i><span>Education</span></a></li>
-                            <li><a class="smoothA" href="#works"><i class="fa fa-folder-open"  title="Work" data-toggle="tooltip" data-placement="bottom" ></i><span>Works</span></a></li>
+                            <li><a class="smoothA" href="#projects"><i class="fa fa-folder-open"  title="Projects" data-toggle="tooltip" data-placement="bottom" ></i><span>Projects</span></a></li>
                             <li><a class="smoothA" onclick="contactObj.fadeToggle()"><i class="fa fa-globe"  title="Social" data-toggle="tooltip" data-placement="bottom" ></i><span>Social</span></a></li>
                         </ul>
                     </div>
@@ -83,7 +77,7 @@
                             <p>
                                 我是 ffbli <br>
                                 <!-- 自嘲為 Google + Copy&Paste 大屍<br> -->
-                                最後任職於 Dopod Corp. 技術經理<br>
+                                最後任職於 Nexusguard Software Specialist, Applicaiton<br>
                                 畢業於台北科技大學資訊工程所碩士<br>
                                 我的專長是電腦科學，程式語言是我用來解決問題的工具<br>
                             </p>
@@ -119,46 +113,112 @@
                         <h1>Summary</h1>
                         <ul>
                             <li>Over 4 years of experience in RD management </li>
-                            <li>Over 9 years of Business & System design</li>
-                            <li>Over 12 years of experience in Web system development</li>
+                            <li>Over 13 years of Business & System design</li>
+                            <li>Over 16 years of experience in Web system development</li>
+                            <li>Over 4 years of industry experience in DNS</li>
                             <li>Over 4 years of industry experience in Social network</li>
                             <li>Over 7 years of industry experience in E-learning</li>
-                            <li>Familiar with Coding、PHP、JavaScript、Node.js、CSS、HTML、React</li>
-                            <li>Familiar with MVC</li>
+                            <li>Familiar with Coding、PHP、JavaScript、Node.js、CSS、HTML、Vue</li>
                             <li>Familiar with MySQL & MongoDB</li>
-                            <li>Familiar with Linux (Ubuntu、CentOS) & Windows Server</li>
-                            <li>Familiar with Git、SVN</li>
-                            <li>Experience in Angular、Vue.js</li>
-                            <li>Experience in Elasticsearch</li>
-                            <li>Experience in Android、JAVA development</li>
-                            <li>Experience in Unit Test、TDD</li>
-                            <li>Experience in C# .Net development</li>
-                            <li>Experience in C & C++、Python development</li>
-                            <li>Experience in Hight performance computing</li>
+                            <li>Familiar with Git</li>
+                            <li>Familiar with Unit Test、TDD</li>
                             <li>Have web system security concepts include XSS, SQL Injection, CSRF</li>
                         </ul>
                     </div>
                     <div id="experience" class="experience section">
                         <h1>Experience</h1>
                         <div class="job blockquote blockquote-red">
+                            <div class="title"><strong>Software Specialist, Application / Nexusguard (泰鼎)網路安全科技有限公司</strong></div>
+                            <div class="during">2017/9 ~ 2022/6</div>
+                            <ul class="description">
+                                <!-- 公司對員工很好，真心推薦 -->
+                                <li>開發和維護 DNS Protection 相關系統和商業邏輯。</li>
+                                <li>維護並逐步改寫舊有的無 framework 的 php + js 的系統，移植到 Node + Vue.js 前後端分離的架構，改善系統穩定和安全性問題，且藉由 Vue 可以實現現代化 UI。</li>
+                                <li>將舊有存到 SSDB 系統資料，在逐步改寫系統時，移到 MySQL，解決 SSDB 像無人維護，不穩定等問題，且因為關聯式資料，使用 MySql 較為合適。</li>
+                                <li>將舊有系統從 GCP 遷移到 AWS，並重新規劃佈署 server 的架構，來實現 HA、並降低 server 成本，且因移至公司主要系統同一個 VPC，來降低管理成本。</li>
+                                <li>建立公司自有的 UI Components，達到可重複利用 Components 來加速開發。</li>
+                                <li>將系統全面 Docker 化，且利用 docker-compose 來建立和佈署開發、Staging 和 Production 環境。</li>
+                                <li>持續改善系統，由原本每周 1~3 次出狀況。改善到數個月一次，其中絕大多數是商業邏輯理解不同的問題。</li>
+                                <li>利用 jenkinsfile + gitlab + docker-compose + Zoom 建立 CI/CD 自動化流程，加速開發、測試、佈署流程。</li>
+                                <li>建立前後端開發 template 和程式規範，令所有專案可以重複利用且依循同一套準則撰寫。</li>
+                                <li>引用 A successful git branching model 結合 Gitlab 改善開發流程。</li>
+                                <li>利用 TDD 持續撰寫可測試程式來改善 coding quality。</li>
+                                <li>持續 Code review 來改善 coding quality 和提升團隊實力。</li>
+                            </ul>
+                        </div>
+                        <div class="job blockquote blockquote-gray">
                             <div class="title"><strong>Front-End Team Leader / 九星資訊股份有限公司</strong></div>
                             <div class="during">2016/8 ~ 2017/8</div>
-                        </div> 
+                            <ul class="description">
+                                <li>帶領 Front-End team 開發社群系統。</li>
+                                <li>建立前端團隊，配合公司要採用前後端分離架構，以利一個後端 API 可以與 WEB、iOS、Android 共用。</li>
+                                <li>重寫舊有的 php + js 前後端混合一起的系統，改採用 React + Node，以實現前後端分離，令團隊能更專注在前端技術，實現互動性較好的現代化 UI。</li>
+                                <li>前端使用 Server Site Render 架構，以解決 SEO 問題。</li>
+                                <li>利用 React 建立公司自有的 UI Components，實行公司 Design Guildline 的 UI，並達到可重複利用 Components 來加速開發。</li>
+                                <li>利用 Vagrant 來建立開發環境，降低開發環境建置成本。</li>
+                                <li>引用 A successful git branching model 改善開發流程。</li>
+                                <li>持續 Code review 來改善 coding quality 和提升團隊實力。</li>
+                                <li>與 OPS 團隊一起建立 CI/CD 自動化流程，加速開發、測試、佈署流程。</li>
+                            </ul>
+                        </div>
                         <div class="job blockquote blockquote-gray">
                             <div class="title"><strong>Web Team Leader / 台灣牛經資訊有限公司</strong></div>
                             <div class="during">2016/2 ~ 2016/8</div>
-                        </div>                        
+                            <ul class="description">
+                                <li>帶領 Web team 開發公司金融和社群系統。</li>
+                                <li>建立和改善前端、後端系統架構。</li>
+                                <li>建立和改善開發流程。</li>
+                                <li>開發比賽系統後台和使用 hybrid 架構的 mobile web (Node + hapi + Angular)。</li>
+                                <li>開發 IM (Instant Messagin) 前端介面 (Vanilla JS)。</li>
+                                <li>開發理財系統後端 API 和管理後台 (Java + Maven + Spring MVC + Vue.js)。</li>
+                                <li>Code review、Pair programming、TDD 等方式，來改善 coding quality 和提升團隊實力。</li>
+                            </ul>
+                        </div>
                         <div class="job blockquote blockquote-gray">
                             <div class="title"><strong>技術經理／多普達國際股份有限公司</strong></div>
                             <div class="during">2012/12 ~ 2015/09</div>
+                            <ul class="description">
+                               <li>帶領約十個人左右的 RD 團隊(包含台灣和上海)。一同開發與設計線上學習系統，系統範圍包含 Web 和 Android APP 平版。該系統約有十萬個使用者，每日約有一萬人使用。</li>
+                               <li>整合分散的不同系統於一個系統。原先有 Social、Books、Classroom、Practice、Course、Data Analytics 六個子系統整合成一個 LMS 系統，包含新功能建立、系統架構重構、資料庫和靜態資料重新規畫、程式重建、使用 Angular 改善前端及遷移計畫。</li>
+                               <li>改善 Social 系統 Mogodb 效能不佳且易當機問題，包含 Mongodb 索引重構，改善 Erlang 程式邏輯及查詢條件使用不佳。</li>
+                               <li>使用 PHP + MySQL 開發線上考試系統，包含系統設計、資料庫設計、資料管理後台、統計報表、維護 Android APP。</li>
+                               <li>利用 Node + Mongodb 收集使用者操作資訊及 MySQL Master-Slave 建立不影響 Production 的 Data Analytcs 系統，並使用 Hightcharts 繪製統計圖表。</li>
+                               <li>利用 Node + Express 改寫原本 Social 系統用 Erlang 寫的 Backend Server，增進效能和改善 Erlang 不易維護問題。</li>
+                               <li>使用 Elasticsearch 搜尋技術建立，線上學習教材搜尋引擎，方便使用者在各種情境下的搜尋條件，與 MySQL 比較尋搜效率大幅提升。</li>
+                               <li>使用 H264 編碼並封裝成 mp4 做線上影音播放平台，並利用 Node + Express 建立轉檔工作排程器的 Backend。</li>
+                               <li>開發 IRS (Classroom) 系統，建立投影片編輯後台(像 google 簡報 UI)，維護 Long Polling (Python + tornado) 的 Backend 並利用 Lua 做中間層，實作線上人數和有誰在線上功能。</li>
+                               <li>利用 Node + Express + Socket.io 開發線上即時訊息功能的 Backend。</li>
+                               <li>維護公司 Learnmode luncher、Books、Practice、Course、Classroom 五隻 Android APP。</li>
+                               <li>在各個學校內建立類似 CDN Server 來分散靜態資料(MP4、PDF)及 IRS 的負載，約有 7x 台 Server，並建立 Hearbeat 機制自動切換和檢查檔案機制，避免使用者無法存取資料。</li>
+                               <li>使用 .net C# 操作 COM 元件將 Office 文件轉成 PDF 文件。</li>
+                               <li>使用 Git + Gitlab 取代 SVN，並引用 A successful git branching model 改善 Production 和 Staging 開發流程。</li>
+                               <li>引用 SCRUM 每日站立會議，快速了解開發瓶頸並快速解決會阻礙進度的技術問題。</li>
+                               <li>引用看版(Kanban)方法，快速了解專案狀態及資料分享。</li>
+                            </ul>
                         </div>
                         <div class="job blockquote blockquote-gray">
                             <div class="title"><strong>資深工程師／台灣數位學習股份有限公司</strong></div>
                             <div class="during">2008/09 ~ 2012/12</div>
+                            <ul class="description">
+                                <li>使用 PHP+MySQL 建立 E-learning 系統，包含企業用(TMS)、學校用(LMS)、個人用(PMS)不同領域系統。</li>
+                                <li>利用 Wowza Streaming Engine 做線上直播系統，包含直播完畢自動轉檔成一般 Web Video Streaming 及線上聊天室(Long Polling)。</li>
+                                <li>使用 Kendo UI 建立行動裝置網頁。</li>
+                                <li>開發可自訂網頁區塊及樣式(跟 iGoogle 類似)功能。</li>
+                                <li>開發後端資料分享功能，可以把所有使用此系統的教材資料，統一成一個網站。</li>
+                                <li>跨瀏覽器開發(IE6~10、Firefox、Chrome)，並利用 CSS Hacker 等技術。</li>
+                                <li>使用 VistualDocumentRoot 建立可以直接操作開出不同網域及資料獨立的子站。</li>
+                                <li>使用 NSIS 將(PMS + Apache + MySQL + PHP) 包裝成 Windows Installer。</li>
+                                <li>使用 ImagicMagick 改善系統縮圖品質。</li>
+                            </ul>
                         </div>
                         <div class="job blockquote blockquote-gray">
                             <div class="title"><strong>實習生／中國技術學院電算中心</strong></div>
                             <div class="during">2003/07 ~ 2006/05</div>
+                            <ul class="description">
+                                <li>使用 .net C# 開發校園行事曆系統、LDAP 查詢系統、耗材管理系統。</li>
+                                <li>使用 Perl 模擬 Telnet 到 Cisio Switch/Router 存取 Netflow 資料，並利用 Perl CGI 建立網頁瀏覽功能。</li>
+                                <li>使用 Perl CGI 建立一個自動化的宿舍管理系統，包含建立白名單和自動鎖 IP/MAC 功能。</li>
+                            </ul>
                         </div>
                     </div>
                     <div id="education" class="education section">
@@ -176,13 +236,75 @@
                             <div class="during">1998 ~ 2003</div>
                         </div>
                     </div>
-                    <div id="works" class="works section">
-                        <h1>Works</h1>
+                    <div id="projects" class="projects section">
+                        <h1>Projects</h1>
+                        <h3><strong>Nexusguard (泰鼎)網路安全科技有限公司</strong></h3>
+                        <div class="row grid">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
+                                <div class="thumbnail">
+                                    <img class="lazy" src="themes/default/images/loading.gif" data-original="images/nxg-dns-protection.png" alt="DNS Protection">
+                                    <div class="caption">
+                                        <h3>DNS Protection</h3>
+                                        <p>
+                                            跟 DNS 相關的 DDoS 防護服務
+                                        </p>
+                                        <p>
+                                            角色：開發負責人
+                                        </p>
+                                        <p>
+                                            負責項目：
+                                            <ul>
+                                                <li>
+                                                    前後端開發及維護
+                                                </li>
+                                                <li>
+                                                    重構系統，增進穩定性、安全性及可維護性
+                                                </li>
+                                                <li>
+                                                    資料庫設計
+                                                </li>
+                                                <li>
+                                                    整合公司其他系統
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://www.nexusguard.com/dns-protection" target="_blank">More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
+                                <div class="thumbnail">
+                                    <img class="lazy" src="themes/default/images/loading.gif" data-original="images/nxg-hubble.png" alt="Hubble">
+                                    <div class="caption">
+                                        <h3>Hubble</h3>
+                                        <p>
+                                            即時監控全球 DDoS 情況
+                                        </p>
+                                        <p>
+                                            角色：成員
+                                        </p>
+                                        <p>
+                                            負責項目：
+                                            <ul>
+                                                <li>
+                                                    前端開發及維護
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://hubble.nexusguard.com" target="_blank">More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <h3><strong>九星資訊股份有限公司</strong></h3>
                         <div class="row grid">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
                                 <div class="thumbnail">
-                                    <img class="lazy" src="themes/default/images/loading.gif" data-original="images/dpu-social.png" alt="FDT操盤手">
+                                    <img class="lazy" src="themes/default/images/loading.gif" data-original="images/dpu-social.png" alt="Deepblu 社群平台">
                                     <div class="caption">
                                         <h3>Deepblu 社群平台</h3>
                                         <p>
@@ -210,11 +332,11 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="https://www.deepblu.com/discover/live" target="_blank">Deepblu 社群平台</a>
+                                        <a href="https://www.deepblu.com" target="_blank">Deepblu 社群平台</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <h3><strong>台灣牛經資訊有限公司</strong></h3>
                         <div class="row grid">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -243,9 +365,6 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div class="link">
-                                        <a href="http://fdt.io/zh/fdt%E6%93%8D%E7%9B%A4%E6%89%8B/" target="_blank">FDT操盤手</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -273,9 +392,6 @@
                                                 </li>
                                             </ul>
                                         </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="http://fdtcapital.com/" target="_blank">FDT財富管家</a>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +438,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://lms.learnmode.net/" target="_blank">LearnMode 學習吧</a>
+                                        <a href="https://lms.learnmode.net" target="_blank">LearnMode 學習吧</a>
                                     </div>
                                 </div>
                             </div>
@@ -368,9 +484,6 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div class="link">
-                                        <a href="http://classroom.learnmode.net/" target="_blank">Classroom 後台</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -409,9 +522,6 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div class="link">
-                                        <a href="http://practice.learnmode.net/" target="_blank">Practice 後台</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -443,8 +553,6 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div class="link">
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -463,9 +571,6 @@
                                                 </li>
                                             </ul>
                                         </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="http://www.dopod.com/" target="_blank">Dopod 官網</a>
                                     </div>
                                 </div>
                             </div>
@@ -500,9 +605,6 @@
                                                 </li>
                                             </ul>
                                         </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="http://lmadmin.learnmode.net/" target="_blank">Books 後台</a>
                                     </div>
                                 </div>
                             </div>
@@ -543,9 +645,6 @@
                                                 </li>
                                             </ul>
                                         </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="http://course.learnmode.net/" target="_blank">Course 後台</a>
                                     </div>
                                 </div>
                             </div>
@@ -604,9 +703,6 @@
                                                 </li>
                                             </ul>
                                         </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="http://ffbli-lms.no-ip.org" target="_blank">Demo</a>
                                     </div>
                                 </div>
                             </div>
@@ -676,8 +772,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://tw.formosasoft.com/cpage/fms_features/" target="_blank">More Info</a>、
-                                        <a href="http://ee.media.nthu.edu.tw/" target="_blank">清大影音分享網</a>
+                                        <a href="https://tw.formosasoft.com/cpage/fms_features/" target="_blank">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -717,8 +812,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://www.powercam.cc/" target="_blank">PowerCam.cc</a>、
-                                        <a href="http://www.camdemy.com/" target="_blank">Camdemy</a>
+                                        <a href="https://www.camdemy.com/" target="_blank">Camdemy</a>
                                     </div>
                                 </div>
                             </div>
@@ -759,9 +853,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://sites.powercam.cc/site/ilms" target="_blank">More Info</a>、
-                                        <a href="http://sites.powercam.cc/" target="_blank">iStie Demo</a>、
-                                        <a href="http://lms.ctl.cyut.edu.tw/" target="_blank">朝陽科技大學</a>
+                                        <a href="https://ilms.ntunhs.edu.tw/" target="_blank">北護大iLMS學習社群</a>
                                     </div>
                                 </div>
                             </div>
@@ -792,7 +884,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://tw.formosasoft.com/cpage/tms_features/" target="_blank">More Info</a>
+                                        <a href="https://tw.formosasoft.com/cpage/tms_features/" target="_blank">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -825,9 +917,6 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div class="link">
-                                        <a href="http://blog.ncue.edu.tw/" target="_blank">國立彰化師範大學</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -849,7 +938,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="http://tw.formosasoft.com/cpage/evercam/" target="_blank">More Info</a>
+                                        <a href="https://tw.formosasoft.com/cpage/evercam/" target="_blank">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -866,7 +955,7 @@
                                         </p>
                                     </div>
                                     <div class="link">
-                                        <a href="https://chrome.google.com/webstore/detail/coursera-materials-downlo/ijkboagofaehocnjacacdhdcbbcpilih" target="_blank">More Info</a>
+                                        <a href="https://github.com/ffbli666/Coursera-Materials-Downloader" target="_blank">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -1057,9 +1146,6 @@
                                             簡單的校園行事曆。給各行政單位可以同時登錄新學期的行事曆。
                                         </p>
                                     </div>
-                                    <div class="link">
-                                        <a href="http://ccnt1.cute.edu.tw/calendar/" target="_blank">中國科技大學－校園行事曆</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 grid-item">
@@ -1090,7 +1176,7 @@
                                     <div class="caption">
                                         <h3>Netflow</h3>
                                         <p>
-                                            使用 Perl 模擬 Telnet 到 Cisio Switch/Router 存取 Netflow 的流量統計資料，並整理顯示於網頁上方便查詢。做為校內網路是否有異常之依據。
+                                            使用 Perl 模擬 Telnet 到 CISCO Switch/Router 存取 Netflow 的流量統計資料，並整理顯示於網頁上方便查詢。做為校內網路是否有異常之依據。
                                         </p>
                                     </div>
                                 </div>
@@ -1264,27 +1350,27 @@ function sidebarHide(callback) {
 <!--
 
 台灣一些跟技術相關的年會，歡迎多參加這類活動，會受益良多
-COSCUP：http://coscup.org/2015/zh-tw/
+COSCUP：https://coscup.org
 最大的 open source 社群
 
-JSDC：http://jsdc.tw/
+JSDC：https://jsdc.tw
 以 javascript 為主的前端工程師社群
 
-PHP Conf：http://2015.phpconf.tw/
+PHP Conf：https://2015.phpconf.tw
 以 php 為主的工程師社群
 
-Hitcon：http://hitcon.org/2015/
+Hitcon：https://hitcon.org
 台灣駭客年會，以資訊安全為主的論壇
 
-MOPCON：http://mopcon.org
+MOPCON：https://mopcon.org
 南台灣最強大的技術研討會
 
-ModerWEB：http://modernweb.tw/
+ModerWEB：https://modernweb.tw
 以 WEB 為主的研討會
 
-JCConf：http://jcconf.tw/
+JCConf：https://jcconf.tw
 以 JAVA　為主的研討會
 
-5pu+57aT5pyJ5pyL5Y+L5ZWP5oiR77yM5Zyo5oiR55qE5Lq655Sf5LmL5Lit77yM6aCG5Yip55qE5LqL5ZKM5LiN5aaC5oSP55qE5LqL5L2V6JGX5bGF5aSa77yfDQrmiJHlm57nrZTvvIzkuI3lpoLmhI/nmoTkuovlsYXlpJrvvIzkuI3nhLbpgqPkvoblj6ToqIDvvJrkurrnlJ/kuI3lpoLmhI/kuovljYHluLjlhavkuZ0NCuWwsei3n+Wvq+eoi+W8j+S4gOaoo++8jOWmguaenOS7lOe0sOaDs+aDsw0K5pyD55m854++6KaB5a6M5oiQ5LiA5YCL6IO95oiQ5Yqf5Z+36KGM55qE56iL5byP77yM5L2g56ys5LiA5YCL56Kw5Yiw55qE5ZWP6aGM5LiA5a6a5piv5aSx5pWXICjljbPkvb/mmK8gSGVsbG8gV29ybGQpDQrnm7TliLDlrozmiJDliY3vvIzlpLHmlZfkuIDlrprpgaDpgaDlpKfmlrzmiJDlip/mrKHmlbjvvIzlvojlsJHmnInkurrkuIDmrKHlsLHog73lr6vmiJDlip/nmoQNCuWPquiDveaMgee6jOS4jeaWt+eahCB0cnkgZXJyb3Ig6YGO56iL5Lit77yM6Kmi5rGC6Kej562UDQrlnKjpgJnmjqLnqbbnmoTpgY7nqIvkuK3vvIzllK/mnInloIXmjIHjgIHliqrlipvjgIHkuI3mlL7mo4TjgIHkuI3og73ooqvlpLHmlZfmiZPot6jvvIzntYLnqbbmiY3og73op6PnrZTvvIzlj5blvpfmu7/otrPnmoTmiJDlsLHmhJ8NCuS6uueUn+eahOmBjueoi+S4jeS5n+aYr+mAmeaoo+WXju+8nw0K5LiN5aaC5oSP55qE5LqL5oOF5aSq5aSa5LqG77yM6YKj54K65LuA6bq85LiN6L2J5b+177yM5a2457+S5aSa55yL5Lq644CB5LqL44CB54mp5aW955qE6YKj5LiA6Z2iDQrnlKjlpb3nmoTpgqPkuIDpnaLvvIzlhYXmu7/oh6rlt7HvvIzpgJnmqKPmr4/lpKnnmoTnlJ/mtLvvvIzoh6rnhLbmnIPmr5TovIPplovlv4MNCueUn+WRvee4veacg+aJvuWIsOWHuui3r+eahA0K6YCZ5bCx5piv5Lq655Sf77yB
+5pu+57aT5pyJ5pyL5Y+L5ZWP5oiR77yM5Zyo5oiR55qE5Lq655Sf5LmL5Lit77yM6aCG5Yip55qE5LqL5ZKM5LiN5aaC5oSP55qE5LqL5L2V6JGX5bGF5aSa77yfCuaIkeWbnuetlO+8jOS4jeWmguaEj+eahOS6i+WxheWkmu+8jOS4jeeEtumCo+S+huWPpOiogO+8muS6uueUn+S4jeWmguaEj+S6i+WNgeW4uOWFq+S5nQrlsLHot5/lr6vnqIvlvI/kuIDmqKPvvIzlpoLmnpzku5TntLDmg7Pmg7MK5pyD55m854++6KaB5a6M5oiQ5LiA5YCL6IO95oiQ5Yqf5Z+36KGM55qE56iL5byP77yM5L2g56ys5LiA5YCL56Kw5Yiw55qE5ZWP6aGM5LiA5a6a5piv5aSx5pWXICjljbPkvb/mmK8gSGVsbG8gV29ybGQpCuebtOWIsOWujOaIkOWJje+8jOWkseaVl+S4gOWumumBoOmBoOWkp+aWvOaIkOWKn+asoeaVuO+8jOW+iOWwkeacieS6uuS4gOasoeWwseiDveWvq+aIkOWKn+eahArlj6rog73mjIHnuozkuI3mlrfnmoQgdHJ5IGVycm9yIOmBjueoi+S4re+8jOipouaxguino+etlArlnKjpgJnmjqLnqbbnmoTpgY7nqIvkuK3vvIzllK/mnInloIXmjIHjgIHliqrlipvjgIHkuI3mlL7mo4TjgIHkuI3og73ooqvlpLHmlZfmiZPot6jvvIzntYLnqbbmiY3og73op6PnrZTvvIzlj5blvpfmu7/otrPnmoTmiJDlsLHmhJ8K5Lq655Sf55qE6YGO56iL5LiN5Lmf5piv6YCZ5qij5ZeO77yfCuS4jeWmguaEj+eahOS6i+aDheWkquWkmuS6hu+8jOmCo+eCuuS7gOm6vOS4jei9ieW/te+8jOWtuOe/kuWkmueci+S6uuOAgeS6i+OAgeeJqeWlveeahOmCo+S4gOmdogrnlKjlpb3nmoTpgqPkuIDpnaLvvIzlhYXmu7/oh6rlt7HvvIzpgJnmqKPmr4/lpKnnmoTnlJ/mtLvvvIzoh6rnhLbmnIPmr5TovIPplovlv4MK55Sf5ZG957i95pyD5om+5Yiw5Ye66Lev55qECumAmeWwseaYr+S6uueUn++8gQrpgJnmrrXoqbHnlZnntaboh6rlt7HvvIzpoZjoh6rlt7Hojqvlv5jliJ3oobc=
 
 -->

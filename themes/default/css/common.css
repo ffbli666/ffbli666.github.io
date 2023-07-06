@@ -211,6 +211,10 @@ a img {
     font-size: 16px
 }
 
+.job .during {
+    margin-bottom: 10px;
+}
+
 .student .school {
     font-size: 16px
 }
