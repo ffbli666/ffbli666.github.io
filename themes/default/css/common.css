@@ -271,10 +271,35 @@ a img {
     }
 
     .job .title {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .student .school {
-        font-size: 20px
+        font-size: 20px;
+    }
+}
+
+
+@media print {
+    @page {
+		size: A4 portrait;
+	}
+
+    a[href]:after {
+        content: unset;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sidebar-reveal ~ .main {
+        margin-left: 0px;
+        transform: translateX(0);
+        width: calc(100%);
+    }
+    .thumbnail img {
+        display: none;
+    }
+    .more {
+        display: none;
     }
 }
